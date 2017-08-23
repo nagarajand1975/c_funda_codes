@@ -1,0 +1,22 @@
+// convert smallercase string into uppercase without using built in function
+
+//here we will use a number 32 coz Ascii value of a=97 and ascii value of A=65. Diff is 32
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+
+  char name[20]="suresh";
+  int i;
+  clrscr();
+  
+  for(i=0;name[i]!='\0';i++)
+    name[i]=name[i]-32;    //****32 is the diff between caps and small letters ascii value
+  
+  name[i]='\0';
+  
+  printf("%s",name);
+  getch();
+
+}
